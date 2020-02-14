@@ -1,0 +1,33 @@
+{
+  "name": "CalendarApp",
+  "version": "1.0.0",
+  "description": "Express JS Rest Api Calendar APP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src",
+    "watch": "cross-env NODE_ENV=development nodemon --inspect ./src",
+    "test": "cross-env JWT_SECRET=\"superSecret\" NODE_ENV=test mocha --timeout 15000 --exit tests/spec.js"
+  },
+  "keywords": [
+    "Calendar",
+    "Rest",
+    "Api"
+  ],
+  "author": "Artur Lehrfeld",
+  "license": "MIT",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "bcrypt": "^3.0.6",
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^7.0.1",
+    "mongoose": "^5.7.10",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
